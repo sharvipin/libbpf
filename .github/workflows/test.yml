@@ -30,6 +30,9 @@ jobs:
           - kernel: 'LATEST'
             runs_on: s390x #test comment
             arch: 's390x'
+          - kernel: 'LATEST'
+            runs_on: ubuntu-20.04
+            arch: 'ppc64le'
     steps:
       # Allow CI user to access /dev/kvm (via qemu) w/o group change/relogin
       # by changing permissions set by udev.
